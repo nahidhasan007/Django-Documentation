@@ -1,0 +1,7 @@
+<h1>Welcome to User info</h1>
+<ol>
+{% for data in users %}
+<li>Name: {{data.voter_name}}       Id: {{data.voter_id}}</li>
+{% endfor %}
+</ol>
+<a href="{% url 'pools:people' %}">Back</a>

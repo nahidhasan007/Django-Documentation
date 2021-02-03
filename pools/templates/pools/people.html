@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voter</title>
+</head>
+<body>
+
+<form action="{% url 'pools:people' %}" method="POST">
+	{% csrf_token %}
+	<input type="text" name="VoterName" placeholder="votername"><br>
+	<input type="text" name="VoterId" placeholder="voterid"><br>
+	<input type="submit" value="create"><br>
+	
+</form>
+
+</body>
+</html>
